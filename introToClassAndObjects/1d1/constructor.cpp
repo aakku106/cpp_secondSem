@@ -6,7 +6,7 @@ private:
     int len, wid;
 
 public:
-    void setData(int l, int w)
+    Rectangle(int l, int w)
     {
         len = l;
         wid = w;
@@ -21,13 +21,15 @@ public:
 };
 int main()
 {
-    Rectangle book, lappy, desk;
-    book.setData(2, 4);
-    lappy.setData(4, 8);
-    desk.setData(6, 10);
+    Rectangle book(2, 4), lappy(4, 8), desk(6, 10);
+    // book.setData(2, 4);        this
+    // lappy.setData(4, 8);         3 lines
+    // desk.setData(6, 10);             are not needed any more
     // show data
     cout << "data of bok \n";
     book.showSata();
     cout << "data of lappy" << endl;
     lappy.showSata();
+    cout << "data of desk" << endl;
+    desk.showSata();
 }
