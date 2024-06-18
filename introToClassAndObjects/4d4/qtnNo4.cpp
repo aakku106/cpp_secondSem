@@ -16,7 +16,7 @@ class Test{
         Test t;
         t.getdata();
         cout<<"enter the value of x \n";
-        cin>>t.x ;
+        cin>>t.x;
         cout<<"ENter the value of y \n";
         cin>>t.y;
     }
