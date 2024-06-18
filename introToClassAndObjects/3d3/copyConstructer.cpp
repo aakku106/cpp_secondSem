@@ -30,4 +30,10 @@ int main()
     book.showSata();
     cout << "data of lappy" << endl;
     lappy.showSata();
+    Rectangle copyBook(book);
+}
+Rectangle::Rectangle(Rectangle &r)
+{
+    len = r.len;
+    wid = r.wid;
 }
