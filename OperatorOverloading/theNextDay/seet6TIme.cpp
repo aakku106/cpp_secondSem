@@ -12,7 +12,7 @@ private:
 public:
     time(int, int);
     ~time();
-}; // huh
+}; //end of class time
 
 time::time(int h, int m)
 {
