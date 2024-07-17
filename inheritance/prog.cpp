@@ -1,15 +1,15 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Animal{
-    public:
+class Animal
+{
+public:
     void eat();
     void sleep();
-
 };
-class Dog:public Animal
+class Dog : public Animal
 {
-    public:
-     void bark();
+public:
+    void bark();
 };
 
 int main()
@@ -22,12 +22,13 @@ int main()
 }
 void Animal::eat()
 {
-    cout<<"Animal is eating"<<endl;
+    cout << "Animal is eating" << endl;
 }
 void Animal::sleep()
 {
-    cout<<"Animal is sleeping"<<endl;
+    cout << "Animal is sleeping" << endl;
 }
-void Dog::Bark(){
-    cout<<"Dog is barking"<<endl;
+void Dog::bark()
+{
+    cout << "Dog is barking" << endl;
 }
