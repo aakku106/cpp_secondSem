@@ -85,7 +85,7 @@ public:
     Distance operator+(Distance d)
     {
 
-        Distance dist;
+        Distance dist;  
         dist.feet = feet + d.feet;
         // dist.feet = d1.feet + d2.feet;
         dist.inch = inch + d.inch;
