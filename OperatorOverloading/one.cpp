@@ -103,4 +103,5 @@ int main()
     Distance d1(10, 6), d2(5, 8), d3;
     d3 = d1 + d2;
     d3.display();
+    return 0;
 }
