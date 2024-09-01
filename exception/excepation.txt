@@ -1,0 +1,6 @@
+Exception
+-> runtime error
+-> Problem aries while program is being exicuted
+-> program will stop when exception occurs.. -/abrupt/-
+-> how to stop ? __.-> by exception handiling.
+
