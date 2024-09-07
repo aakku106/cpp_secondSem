@@ -4,3 +4,8 @@ Exception
 -> program will stop when exception occurs.. -/abrupt/-
 -> how to stop ? __.-> by exception handiling.
 
+
+# three keyword for exception handiling:
+i.    Try
+ii.   Throw
+iii.  catch
