@@ -17,8 +17,7 @@ public:
     // Friend function to overload the + operator
     friend Height operator+(Height, Height);
 
-    // Function to display height
-    void display() const
+    void display()
     {
         cout << meter << " meters and " << centimeter << " centimeters" << endl;
     }
