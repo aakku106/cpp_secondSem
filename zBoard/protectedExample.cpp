@@ -7,7 +7,10 @@ protected:
     int protectedValue;
 
 public:
-    Base() : protectedValue(0) {} 
+    Base()
+    {
+        protectedValue = 0;
+    }
 
     void setProtectedValue(int val)
     {
@@ -27,8 +30,10 @@ public:
 int main()
 {
     Derived obj;
-    obj.setProtectedValue(10);
-    obj.show();
+    obj.setProtectedValue(10); // Public function can access protected member indirectly
+    obj.show();                // Protected member accessed via derived class method
+
+    // obj.protectedValue = 20; // Error: protectedValue is not accessible directly
 
     return 0;
 }
