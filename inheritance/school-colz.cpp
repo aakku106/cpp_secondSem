@@ -62,6 +62,6 @@ void Coordinators::displayData()
 {
     cout << "the program of coordinator is\t" << program << endl;
     Teacher t;
-    // t.getTeacher();
-    // t.displayTeacher();
+    // t.getTeacher(); // this is aggrication
+    // t.displayTeacher(); // aggreation dont need in inheritance
 }
