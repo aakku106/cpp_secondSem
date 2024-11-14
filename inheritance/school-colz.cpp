@@ -1,21 +1,17 @@
 #include <iostream>
 using namespace std;
-
 class Teacher
 {
-
-private:
     int id;
     string subject;
 
 public:
-    void getTeacher(int id, string subject);
-    void displayTeacher(int id, string subject);
+    void getTeacher();
+    void displayTeacher();
 };
 
 class Staff
 {
-private:
     int id;
     string subject;
 
@@ -25,30 +21,47 @@ public:
 };
 class Coordinators : public Teacher, public Staff
 {
-private:
+    Teacher t;
+    Staff s;
     string program;
 
 public:
-    void getdata();
-    void displaydata();
+    void getData();
+    void displayData();
 };
 
 int main()
 {
     Coordinators c;
-    c.getdata();
-    c.displaydata();
+    c.getData();
+    c.getTeacher();
+    // c.getStaff();
+    c.displayData();
+    c.displayTeacher();
+    // c.displayStaff();
     return 0;
 }
-void Teacher::getTeacher(int id, string subject)
+void Teacher::getTeacher()
 {
-    cout << "Enter Teacher ID: ";
+    cout << "Enter Teacher ID:\t";
     cin >> id;
-    cout << "Enter Teacher Subject: ";
+    cout << "Enter Teacher Subject:\t";
     cin >> subject;
 }
-void Teacher::displayTeacher(int id, string subject)
+void Teacher::displayTeacher()
 {
-    cout << "Teacher ID: " << id << endl;
-    cout << "Teacher Subject: " << subject << endl;
+    cout << "Teacher ID:\t" << id << endl;
+    cout << "Teacher Subject:\t" << subject << endl;
+}
+void Coordinators::getData()
+{
+    cout << "WHat is the program of ur coordinator\t";
+    cin >> program;
+}
+void Coordinators::displayData()
+{
+    cout << "the program of coordinator is\t" << program << endl;
+    Teacher t;
+    // t.getTeacher();
+    // t.displayTeacher();
 }
