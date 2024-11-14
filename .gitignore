@@ -1,0 +1,40 @@
+# Ignore executable files and object files
+a.out
+*.out
+*.o
+*.obj
+
+# Ignore debug and log files
+*.log
+*.tmp
+*.temp
+
+# Ignore temporary editor files
+*.swp
+*~
+.*.swp
+.DS_Store
+
+# Ignore build and temporary directories
+/build/
+/bin/
+/Debug/
+/Release/
+/dist/
+
+# Ignore CMake build files
+CMakeCache.txt
+CMakeFiles/
+
+# Ignore Visual Studio files
+*.vcxproj*
+*.sln
+*.user
+*.VC.db
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore code backup files
+*.bak
+*.backup

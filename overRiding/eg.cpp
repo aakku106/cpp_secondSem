@@ -37,8 +37,8 @@ public:
         // d.sound(); // overrides the base and return dog
         // c.sound(); // overrides the base nad return cat
         Animal::sound(); // calls base
-        Dog::sound();    // overrides base
-        Cat::sound();    // overrides base
+        Dog::sound();    //  derived
+        Cat::sound();    //  derived
     }
 };
 int main()
