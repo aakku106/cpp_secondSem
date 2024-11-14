@@ -14,4 +14,5 @@ int main()
     cout << "Largest among int is\t" << GetMax(a, b) << endl
          << "largest among float is\t" << GetMax(w, x) << endl
          << "largest among char is\t" << GetMax(e, f) << endl;
+    return 0;
 }
