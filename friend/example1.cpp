@@ -6,7 +6,7 @@ private:
     int length, breadth;
 
 public:
-    Rectangle(int l, int b)
+    Rectangle(int l = 0, int b = 0)
     {
         length = l;
         breadth = b;
@@ -20,5 +20,5 @@ int area(Rectangle r)
 int main()
 {
     Rectangle r(2, 2);
-    cout << "the area of Reacangle is: " << area(r);
+    cout << "the area of rectangle is: " << area(r);
 }
