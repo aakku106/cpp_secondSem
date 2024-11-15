@@ -6,9 +6,8 @@ private:
     int len, bre;
 
 public:
-    Rectangle(int,int);
-    
-       
+    Rectangle(int, int);
+
     void area()
     {
         cout << "The area of the rectangle is " << len * bre << endl;
