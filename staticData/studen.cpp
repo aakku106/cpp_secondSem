@@ -9,13 +9,13 @@ private:
 
 public:
     Student() {};
-    getData()
+    void getData()
     {
         cout << "Enter the roll number of the student: ";
         cin >> roll;
         cout << "Enter the name of the student: ";
         cin >> name;
-        countStudent++; // always show one  so we need ststic data.
+        countStudent++; // always show one  so we need static data.
     }
     static void displayCount()
     {
